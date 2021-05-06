@@ -15,12 +15,6 @@ public class ShapeService {
 
 
 
-
-
-
-
-
-
     //2 method Print the shape with max area
     public static void printTheShapeWithMaxArea(List<Shape> shapes) {
         Shape maxAreaShape = shapes.get(0);
