@@ -3,8 +3,8 @@ package model;
 import java.security.PublicKey;
 
 abstract public class TwoDShape implements Shape {
-    double length;
-    double width;
+    protected double length;
+    protected double width;
 
 
     public TwoDShape(double length, double width) {
