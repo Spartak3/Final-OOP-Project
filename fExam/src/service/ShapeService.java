@@ -111,10 +111,10 @@ public class ShapeService {
         numsList.add(parallC);
         numsList.add(coneC);
         numsList.add(rectC);
-        Collections.sort(numsList);
+        //Collections.sort(numsList);
 
         //find which shape is it
-        int max = numsList.get(numsList.size() - 1);
+        int max = Collections.max(numsList);
         String shapeName = "";
         if (max == coneC) {
             shapeName = "Cone";
