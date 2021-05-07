@@ -100,7 +100,7 @@ public class ShapeService {
             }
         }
         //add numbers in list to sort and find maximum
-        List<Integer> numsList = new ArrayList<>();
+        List<Integer> numsList = new ArrayList<>(4);
         numsList.add(cubeC);
         numsList.add(parallC);
         numsList.add(coneC);
@@ -138,8 +138,7 @@ public class ShapeService {
         }
 
         //rectangle have compareTo method(compare areas)
-        Collections.sort(rectangleList);
-        return rectangleList.get(rectangleList.size() - 1);
+        return Collections.max(rectangleList);
     }
 
     //8 method Sort Rectangle shapes comparing perimeters (by default it compares areas)
@@ -237,6 +236,7 @@ public class ShapeService {
             }
 
         }
+        //can use Collections.max()
         Collections.sort(maxShapes);
         System.out.println("<<------------------------------------->>");
         System.out.printf("Maximum area sum has %s: with %d sum of areas:\n",maxShape.getClass(),max);
